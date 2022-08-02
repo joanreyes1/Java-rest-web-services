@@ -1,0 +1,19 @@
+package com.cmc.rest.servicios;
+
+import com.cmc.rest.commons.ValidationException;
+import com.cmc.rest.entidades.Persona;
+
+public class ServicioPersonas {
+	public static Persona actualizar(Persona persona) {
+		//if (persona.getNombre().length() <= 3) {
+			//System.out.println(persona + "uaaaaaaa");
+			//throw new ValidationException("El nombre es muy corto");
+		//} else if (persona.getApellido().length() <= 3) {
+			//throw new ValidationException("El apellido es muy corto");
+		//} else {
+			System.out.println(persona.getNombre().toUpperCase());
+			System.out.println(persona.getApellido().toUpperCase());
+		//}
+		return persona;
+	}
+}

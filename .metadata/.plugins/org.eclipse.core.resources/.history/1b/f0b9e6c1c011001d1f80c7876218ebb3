@@ -1,0 +1,14 @@
+package com.cmc.rest.test;
+
+import com.cmc.rest.entidades.Persona;
+import com.cmc.rest.servicios.ServicioPersonas;
+
+public class TestActualizar {
+
+	public static void main(String[] args) {
+		ServicioPersonas sp = new ServicioPersonas();
+		ServicioPersonas.actualizar(new Persona("72772772", "joan", "reyes"));
+
+	}
+
+}

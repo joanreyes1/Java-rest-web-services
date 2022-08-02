@@ -1,0 +1,7 @@
+package com.cmc.rest.entidades;
+
+public class Persona {
+	private String cedula;
+	private String nombre;
+	private String apellido;
+}

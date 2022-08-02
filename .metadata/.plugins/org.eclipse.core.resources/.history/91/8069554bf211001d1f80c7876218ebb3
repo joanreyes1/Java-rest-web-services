@@ -1,0 +1,18 @@
+package com.cmc.rest.commons;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateUtil {
+	public static String convertir(String fecha) {
+		Date date = null;
+		SimpleDateFormat format = new SimpleDateFormat("yyyy/dd/MM HH:mm:ss");
+		try {
+			date = format.parse(fecha);
+		} catch (ParseException e) {
+			System.out.println("fecha incorrecta" + e);
+		}
+		return fecha;
+	}
+}

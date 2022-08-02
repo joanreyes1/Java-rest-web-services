@@ -1,0 +1,13 @@
+package com.cmc.rest.commons;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateUtil {
+	public static String convertir(Date date) {
+		SimpleDateFormat sfm = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SS");
+		String f = sfm.format(date);
+		return f;
+
+	}
+}
